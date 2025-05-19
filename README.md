@@ -22,3 +22,8 @@ After creating the image, run it with the command: ```xhost + && docker run -it 
 <br>
 The `xhost` command manages access control for the X server (the graphical display system used on Unix/Linux).
 
+### What does `xhost +` do?
+
+- `xhost +` **disables all access control**, allowing **any host** to connect to your X server.
+- This means **anyone on the network can display graphical windows on your screen**.
+
