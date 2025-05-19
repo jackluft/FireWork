@@ -16,7 +16,7 @@ Whenever you click anywhere on the window screen, a colorful firework launches f
 ---
 
 ## Run Program
-To run the program first build the docker image with the command: <pre> ```bash docker build -t <imageName> . ``` </pre> <br>
+To run the program first build the docker image with the command: <pre> ```docker build -t <imageName> . ``` </pre> <br>
 
 After creating the image, run it with the command: <pre> ```xhost + && docker run -it --rm -e DISPLAY=host.docker.internal:0 -v /tmp/.X11-unix:/tmp/.X11-unix <imageName>``` </pre>
 <br>
