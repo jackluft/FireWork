@@ -27,3 +27,12 @@ The `xhost` command manages access control for the X server (the graphical displ
 - `xhost +` **disables all access control**, allowing **any host** to connect to your X server.
 - This means **anyone on the network can display graphical windows on your screen**.
 
+## Disclaimer
+
+- This project **has not yet been tested on Windows OS**.
+- If you want to run it on Windows, you will likely need to **change the `DISPLAY` environment variable** in the `docker run` command.
+- For example, on Windows with Docker Desktop, try replacing:
+
+  ```bash
+  -e DISPLAY=host.docker.internal:0
+
