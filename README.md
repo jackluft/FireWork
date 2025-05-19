@@ -18,4 +18,7 @@ Whenever you click anywhere on the window screen, a colorful firework launches f
 ## Run Program
 To run the program first build the docker image with the command: ```docker build -t <imageName> .``` <br>
 After creating the image, run it with the command: ```xhost + && docker run -it --rm -e DISPLAY=host.docker.internal:0 -v /tmp/.X11-unix:/tmp/.X11-unix <imageName>```
+<br>
+<br>
+The `xhost` command manages access control for the X server (the graphical display system used on Unix/Linux).
 
